@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpaca Avatar Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1>Alpaca Generator</h1>
+        <div class="content">
+            <div class="img-display">
+            <!--  Default Alpaca  -->
+
+            <img src="assets/nose.png" alt="nose">
+            <img src="assets/neck/default.png" alt="neck">
+            <img src="assets/mouth/default.png" alt="mouth">
+            <img src="assets/leg/default.png" alt="leg">
+            <img src="assets/hair/curls.png" alt="hair">
+            <img src="assets/eyes/default.png" alt="eyes">
+            <img src="assets/ears/default.png" alt="ears">
+
+            <!--  Accessories  -->
+            <img src="assets/accessories/earings.png" alt="earings" hidden>
+            <img src="assets/accessories/flower.png" alt="flower" hidden>
+            <img src="assets/accessories/glasses.png" alt="glasses" hidden>
+            <img src="assets/accessories/headphone.png" alt="headphones" hidden>
+
+            </div>
+            <div class="options">
+                <h2>Accessorize the alpaca's</h2>
+                <div class="tabs">
+                    <button id="hair" class="button" aria-selected="true">Hair</button>
+                    <button id="ears" class="button" aria-selected="false">Ears</button>
+                    <button id="eyes" class="button" aria-selected="false">Eyes</button>
+                    <button id="mouth" class="button" aria-selected="false">Mouth</button>
+                    <button id="neck" class="button" aria-selected="false">Neck</button>
+                    <button id="leg" class="button" aria-selected="false">Leg</button>
+                    <button id="accessories" class="button" aria-selected="false">Accessories</button>
+                    <button id="background" class="button" aria-selected="false">Background</button>
+                </div>
+
+                <h2>Style</h2>
+                <div class="styles" role="tabpanel" aria-labelledby="hair">
+                    <button class="button" aria-selected="true">Default</button>
+                    <button class="button" aria-selected="false">Curls</button>
+                    <button class="button" aria-selected="false">Short</button>
+                    <button class="button" aria-selected="false">Bang</button>
+                    <button class="button" aria-selected="false">Elegant</button>
+                    <button class="button" aria-selected="false">Quiff</button>
+                </div>
+
+                <div class="styles" role="tabpanel" aria-labelledby="ears" hidden>
+                    <button class="button" aria-selected="true">Default</button>
+                    <button class="button" aria-selected="false">Tilt Backward</button>
+                    <button class="button" aria-selected="false">Tilt Forward</button>
+                </div>
+
+                <div class="styles" role="tabpanel" aria-labelledby="eyes" hidden>
+                    <button class="button" aria-selected="true">Default</button>
+                    <button class="button" aria-selected="false">Angry</button>
+                    <button class="button" aria-selected="false">Naughty</button>
+                    <button class="button" aria-selected="false">Panda</button>
+                    <button class="button" aria-selected="false">Smart</button>
+                    <button class="button" aria-selected="false">Star</button>
+                </div>
+
+                <div class="styles" role="tabpanel" aria-labelledby="mouth" hidden>
+                    <button class="button" aria-selected="true">Default</button>
+                    <button class="button" aria-selected="false">Astonished</button>
+                    <button class="button" aria-selected="false">Eating</button>
+                    <button class="button" aria-selected="false">Laugh</button>
+                    <button class="button" aria-selected="false">Tongue</button>
+                </div>
+
+                <div class="styles" role="tabpanel" aria-labelledby="neck" hidden>
+                    <button class="button" aria-selected="true">Default</button>
+                    <button class="button" aria-selected="false">Bend Backward</button>
+                    <button class="button" aria-selected="false">Bend Forward</button>
+                    <button class="button" aria-selected="false">Thick</button>
+                </div>
+
+                <div class="styles" role="tabpanel" aria-labelledby="leg" hidden>
+                    <button class="button" aria-selected="true">Default</button>
+                    <button class="button" aria-selected="false">Bubble Tea</button>
+                    <button class="button" aria-selected="false">Cookie</button>
+                    <button class="button" aria-selected="false">Game Console</button>
+                    <button class="button" aria-selected="false">Tilt Backward</button>
+                    <button class="button" aria-selected="false">Tilt Forward</button>
+                </div>
+
+                <div class="styles" role="tabpanel" aria-labelledby="accessories" hidden>
+                    <button class="button" aria-selected="true">None</button>
+                    <button class="button" aria-selected="false">Flower</button>
+                    <button class="button" aria-selected="false">Earings</button>
+                    <button class="button" aria-selected="false">Headphones</button>
+                    <button class="button" aria-selected="false">Glasses</button>
+                </div>
+
+                <div class="styles" role="tabpanel" aria-labelledby="background" hidden>
+                    <div class="blue">
+
+                    </div>
+                    <div class="dark-blue">
+                        <button class="background darkblue30" aria-selected="true"></button>
+                        <button class="background darkblue50" aria-selected="false"></button>
+                        <button class="background darkblue70" aria-selected="false"></button>
+                    </div>
+                    <div class="green">
+                        <button class="background green50" aria-selected="false"></button>
+                        <button class="background green60" aria-selected="false"></button>
+                        <button class="background green70" aria-selected="false"></button>
+
+                    </div>
+                    <div class="grey">
+                        <button class="background grey40" aria-selected="false"></button>
+                        <button class="background grey70" aria-selected="false"></button>
+                        <button class="background grey80" aria-selected="false"></button>
+
+                    </div>
+                    <div class="red">
+                        <button class="background red50" aria-selected="false"></button>
+                        <button class="background red60" aria-selected="false"></button>
+                        <button class="background red70" aria-selected="false"></button>
+
+                    </div>
+                    <div class="yellow">
+                        <button class="background yellow50" aria-selected="true"></button>
+                        <button class="background yellow60" aria-selected="false"></button>
+                        <button class="background yellow70" aria-selected="false"></button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="random button">Random</button>
+            <button class="download button">Download</button>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

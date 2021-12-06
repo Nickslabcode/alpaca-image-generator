@@ -1,0 +1,87 @@
+html, * {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+body {
+    background: #E9E9E9;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+  }
+
+.wrapper {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
+}
+
+.img-display {
+    background: url("assets/backgrounds/blue50.png");
+    position: relative;
+    height: 500px;
+    width: 475px;
+    min-height: 500px;
+    min-width: 475px;
+}
+
+.img-display img {
+    position: absolute;
+}
+
+img[alt="nose"] {
+    z-index: 1;
+}
+
+img[alt="hair"] {
+    z-index: 2;
+}
+
+img[alt="mouth"] {
+    z-index: 2;
+}
+
+img[alt="earings"] {
+    left: 5px;
+}
+
+.button {
+    all: unset;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: .75rem 1.75rem;
+    margin: .3rem;
+    cursor: pointer;
+}
+
+.button[aria-selected="true"] {
+    background: black;
+    color: white;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+}
+
+.tabs {
+    padding-bottom: 2em;
+}
