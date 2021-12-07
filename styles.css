@@ -55,11 +55,17 @@ img[alt="hair"] {
     z-index: 2;
 }
 
-img[alt="mouth"] {
-    z-index: 2;
+img[alt="eyes"] {
+    z-index: 3;
 }
 
-img[alt="earings"] {
+img[alt="mouth"] {
+    z-index: 4;
+    bottom: 5px;
+}
+
+img[alt="accessories"] {
+    z-index: 5;
     left: 5px;
 }
 

@@ -2,7 +2,13 @@
 const tabs = document.querySelector('.options');
 const styleHeader = document.querySelector('.options .style-header');
 const tabButtons = tabs.querySelectorAll('[role="tab"]');
+
+const styleButtons = tabs.querySelectorAll('[role="option"]');
 const stylePanels = tabs.querySelectorAll('[role="tabpanel"]');
+const imgs = document.querySelector('.img-display');
+const avatarImgs = imgs.querySelectorAll('img');
+
+
 
 
 // Tab handling
@@ -16,19 +22,33 @@ function handleTabClick(e) {
         panel.hidden = true;
     })
 
-    styleHeader.hidden = true;
-
     // Unselect everything
     tabButtons.forEach(tab => {
         tab.setAttribute('aria-selected', false);
     })
-    // Mark just the clicked option as selected
+    // Mark just the clicked tab as selected
     e.currentTarget.setAttribute('aria-selected', true);
 
-    // Find the associated Style option an show it
+    // Find the associated tab option an show it
     const { id } = e.currentTarget;
     const stylePanel = tabs.querySelector(`[aria-labelledby="${id}"]`);
     stylePanel.hidden = false;
+}
 
+styleButtons.forEach(option => {
+    option.addEventListener('click', handleStyleClick)
+})
+
+function handleStyleClick(e) {
+    const { style, option } = e.currentTarget.dataset;
+    if (option !== 'accessories' || 'background') {
+        const img = imgs.querySelector(`[alt="${option}"]`)
+        img.src = `assets/${option}/${style}.png`;
+    }
+
+    if (option === 'accessories') {
+        const accessory = imgs.querySelector(`[alt="${option}"]`);
+        accessory.hidden = false;
+    }
 }
 

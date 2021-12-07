@@ -16,91 +16,91 @@
         <h1>Alpaca Generator</h1>
         <div class="content">
             <div class="img-display">
-            <!--  Default Alpaca  -->
+                <!--  Default Alpaca  -->
 
-            <img src="assets/nose.png" alt="nose">
-            <img src="assets/neck/default.png" alt="neck">
-            <img src="assets/mouth/default.png" alt="mouth">
-            <img src="assets/leg/default.png" alt="leg">
-            <img src="assets/hair/curls.png" alt="hair">
-            <img src="assets/eyes/default.png" alt="eyes">
-            <img src="assets/ears/default.png" alt="ears">
+                <img src="assets/nose.png" alt="nose">
+                <img src="assets/neck/neck-default.png" alt="neck">
+                <img src="assets/mouth/mouth-default.png" alt="mouth">
+                <img src="assets/leg/leg-default.png" alt="leg">
+                <img src="assets/hair/hair-default.png" alt="hair">
+                <img src="assets/eyes/eyes-default.png" alt="eyes">
+                <img src="assets/ears/ears-default.png" alt="ears">
 
-            <!--  Accessories  -->
-            <img src="assets/accessories/earings.png" alt="earings" hidden>
-            <img src="assets/accessories/flower.png" alt="flower" hidden>
-            <img src="assets/accessories/glasses.png" alt="glasses" hidden>
-            <img src="assets/accessories/headphone.png" alt="headphones" hidden>
+                <!--  Accessories  -->
+                <img src="assets/accessories/earings.png" alt="accessories" hidden>
+                <img src="assets/accessories/flower.png" alt="accessories" hidden>
+                <img src="assets/accessories/glasses.png" alt="accessories" hidden>
+                <img src="assets/accessories/headphone.png" alt="accessories" hidden>
 
             </div>
             <div class="options">
                 <h2>Accessorize the alpaca's</h2>
                 <div class="tabs" role="tablist">
-                    <button  id="hair" class="button" aria-selected="true" role="tab">Hair</button>
-                    <button  id="ears" class="button" aria-selected="false" role="tab">Ears</button>
-                    <button  id="eyes" class="button" aria-selected="false" role="tab">Eyes</button>
-                    <button  id="mouth" class="button" aria-selected="false" role="tab">Mouth</button>
-                    <button  id="neck" class="button" aria-selected="false" role="tab">Neck</button>
-                    <button  id="leg" class="button" aria-selected="false" role="tab">Leg</button>
-                    <button  id="accessories" class="button" aria-selected="false" role="tab">Accessories</button>
-                    <button  id="background" class="button" aria-selected="false" role="tab">Background</button>
+                    <button id="ears" class="button" aria-selected="false" role="tab">Ears</button>
+                    <button id="eyes" class="button" aria-selected="false" role="tab">Eyes</button>
+                    <button id="hair" class="button" aria-selected="false" role="tab">Hair</button>
+                    <button id="mouth" class="button" aria-selected="false" role="tab">Mouth</button>
+                    <button id="neck" class="button" aria-selected="false" role="tab">Neck</button>
+                    <button id="leg" class="button" aria-selected="false" role="tab">Leg</button>
+                    <button id="accessories" class="button" aria-selected="false" role="tab">Accessories</button>
+                    <button id="background" class="button" aria-selected="false" role="tab">Background</button>
                 </div>
 
-                <h2 class="style-header">Style</h2>
-                <div class="styles" role="tabpanel" aria-labelledby="hair">
-                    <button class="button" aria-selected="true">Default</button>
-                    <button class="button" aria-selected="false">Curls</button>
-                    <button class="button" aria-selected="false">Short</button>
-                    <button class="button" aria-selected="false">Bang</button>
-                    <button class="button" aria-selected="false">Elegant</button>
-                    <button class="button" aria-selected="false">Quiff</button>
+                <h2 class="style-header" hidden>Style</h2>
+                <div class="styles" role="tabpanel" aria-labelledby="hair" hidden>
+                    <button data-style="hair-default" data-option="hair" class="button" aria-selected="true" role="option">Default</button>
+                    <button data-style="curls" data-option="hair" class="button" aria-selected="false" role="option">Curls</button>
+                    <button data-style="short" data-option="hair" class="button" aria-selected="false" role="option">Short</button>
+                    <button data-style="bang" data-option="hair" class="button" aria-selected="false" role="option">Bang</button>
+                    <button data-style="elegant" data-option="hair" class="button" aria-selected="false" role="option">Elegant</button>
+                    <button data-style="quiff" data-option="hair" class="button" aria-selected="false" role="option">Quiff</button>
                 </div>
 
                 <div class="styles" role="tabpanel" aria-labelledby="ears" hidden>
-                    <button class="button" aria-selected="true">Default</button>
-                    <button class="button" aria-selected="false">Tilt Backward</button>
-                    <button class="button" aria-selected="false">Tilt Forward</button>
+                    <button data-style="ears-default" data-option="ears" class="button" aria-selected="true" role="option">Default</button>
+                    <button data-style="tilt-backward" data-option="ears" class="button" aria-selected="false" role="option">Tilt Backward</button>
+                    <button data-style="tilt-forward" data-option="ears" class="button" aria-selected="false" role="option">Tilt Forward</button>
                 </div>
 
                 <div class="styles" role="tabpanel" aria-labelledby="eyes" hidden>
-                    <button class="button" aria-selected="true">Default</button>
-                    <button class="button" aria-selected="false">Angry</button>
-                    <button class="button" aria-selected="false">Naughty</button>
-                    <button class="button" aria-selected="false">Panda</button>
-                    <button class="button" aria-selected="false">Smart</button>
-                    <button class="button" aria-selected="false">Star</button>
+                    <button data-style="eyes-default" data-option="eyes" class="button" aria-selected="true" role="option">Default</button>
+                    <button data-style="angry" data-option="eyes" class="button" aria-selected="false" role="option">Angry</button>
+                    <button data-style="naughty" data-option="eyes" class="button" aria-selected="false" role="option">Naughty</button>
+                    <button data-style="panda" data-option="eyes" class="button" aria-selected="false" role="option">Panda</button>
+                    <button data-style="smart" data-option="eyes" class="button" aria-selected="false" role="option">Smart</button>
+                    <button data-style="star" data-option="eyes" class="button" aria-selected="false" role="option">Star</button>
                 </div>
 
                 <div class="styles" role="tabpanel" aria-labelledby="mouth" hidden>
-                    <button class="button" aria-selected="true">Default</button>
-                    <button class="button" aria-selected="false">Astonished</button>
-                    <button class="button" aria-selected="false">Eating</button>
-                    <button class="button" aria-selected="false">Laugh</button>
-                    <button class="button" aria-selected="false">Tongue</button>
+                    <button data-style="mouth-default" data-option="mouth" class="button" aria-selected="true" role="option">Default</button>
+                    <button data-style="astonished" data-option="mouth" class="button" aria-selected="false" role="option">Astonished</button>
+                    <button data-style="eating" data-option="mouth" class="button" aria-selected="false" role="option">Eating</button>
+                    <button data-style="laugh" data-option="mouth" class="button" aria-selected="false" role="option">Laugh</button>
+                    <button data-style="tongue" data-option="mouth" class="button" aria-selected="false" role="option">Tongue</button>
                 </div>
 
                 <div class="styles" role="tabpanel" aria-labelledby="neck" hidden>
-                    <button class="button" aria-selected="true">Default</button>
-                    <button class="button" aria-selected="false">Bend Backward</button>
-                    <button class="button" aria-selected="false">Bend Forward</button>
-                    <button class="button" aria-selected="false">Thick</button>
+                    <button data-style="neck-default" data-option="neck" class="button" aria-selected="true" role="option">Default</button>
+                    <button data-style="bend-backward" data-option="neck" class="button" aria-selected="false" role="option">Bend Backward</button>
+                    <button data-style="bend-forward" data-option="neck" class="button" aria-selected="false" role="option">Bend Forward</button>
+                    <button data-style="thick" data-option="neck" class="button" aria-selected="false" role="option">Thick</button>
                 </div>
 
                 <div class="styles" role="tabpanel" aria-labelledby="leg" hidden>
-                    <button class="button" aria-selected="true">Default</button>
-                    <button class="button" aria-selected="false">Bubble Tea</button>
-                    <button class="button" aria-selected="false">Cookie</button>
-                    <button class="button" aria-selected="false">Game Console</button>
-                    <button class="button" aria-selected="false">Tilt Backward</button>
-                    <button class="button" aria-selected="false">Tilt Forward</button>
+                    <button data-style="leg-default" data-option="leg" class="button" aria-selected="true" role="option">Default</button>
+                    <button data-style="bubble-tea" data-option="leg" class="button" aria-selected="false" role="option">Bubble Tea</button>
+                    <button data-style="cookie" data-option="leg" class="button" aria-selected="false" role="option">Cookie</button>
+                    <button data-style="game-console" data-option="leg" class="button" aria-selected="false" role="option">Game Console</button>
+                    <button data-style="tilt-backward" data-option="leg" class="button" aria-selected="false" role="option">Tilt Backward</button>
+                    <button data-style="tilt-forward" data-option="leg" class="button" aria-selected="false" role="option">Tilt Forward</button>
                 </div>
 
                 <div class="styles" role="tabpanel" aria-labelledby="accessories" hidden>
-                    <button class="button" aria-selected="true">None</button>
-                    <button class="button" aria-selected="false">Flower</button>
-                    <button class="button" aria-selected="false">Earings</button>
-                    <button class="button" aria-selected="false">Headphones</button>
-                    <button class="button" aria-selected="false">Glasses</button>
+                    <button data-style="none" data-option="accessories" class="button" aria-selected="true" role="option">None</button>
+                    <button data-style="flower" data-option="accessories" class="button" aria-selected="false" role="option">Flower</button>
+                    <button data-style="earings" data-option="accessories" class="button" aria-selected="false" role="option">Earings</button>
+                    <button data-style="headphone" data-option="accessories" class="button" aria-selected="false" role="option">Headphones</button>
+                    <button data-style="glasses" data-option="accessories" class="button" aria-selected="false" role="option">Glasses</button>
                 </div>
 
                 <div class="styles" role="tabpanel" aria-labelledby="background" hidden>
