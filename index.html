@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpaca Avatar Generator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="html2canvas.min.js"></script>
+    <script defer src="scripts.js"></script>
 </head>
 <body>
 
@@ -31,6 +33,7 @@
                 <img src="assets/accessories/flower.png" alt="accessories" hidden>
                 <img src="assets/accessories/glasses.png" alt="accessories" hidden>
                 <img src="assets/accessories/headphone.png" alt="accessories" hidden>
+
 
             </div>
             <div class="options">
@@ -103,37 +106,39 @@
                     <button data-style="glasses" data-option="accessories" class="button" aria-selected="false" role="option">Glasses</button>
                 </div>
 
-                <div class="styles" role="tabpanel" aria-labelledby="background" hidden>
-                    <div class="blue">
+                <div class="styles colors" role="tabpanel" aria-labelledby="background" hidden>
+                    <div class="grid">
+                        <button class="background blue50" data-background="blue50" aria-selected="true"></button>
+                        <button class="background blue60" data-background="blue60" aria-selected="false"></button>
+                        <button class="background blue70" data-background="blue70" aria-selected="false"></button>
+                    </div>
+                    <div class="grid">
+                        <button class="background darkblue30" data-background="darkblue30" aria-selected="true"></button>
+                        <button class="background darkblue50" data-background="darkblue50" aria-selected="false"></button>
+                        <button class="background darkblue70" data-background="darkblue70" aria-selected="false"></button>
+                    </div>
+                    <div class="grid">
+                        <button class="background green50" data-background="green50" aria-selected="false"></button>
+                        <button class="background green60" data-background="green60" aria-selected="false"></button>
+                        <button class="background green70" data-background="green70" aria-selected="false"></button>
 
                     </div>
-                    <div class="dark-blue">
-                        <button class="background darkblue30" aria-selected="true"></button>
-                        <button class="background darkblue50" aria-selected="false"></button>
-                        <button class="background darkblue70" aria-selected="false"></button>
-                    </div>
-                    <div class="green">
-                        <button class="background green50" aria-selected="false"></button>
-                        <button class="background green60" aria-selected="false"></button>
-                        <button class="background green70" aria-selected="false"></button>
+                    <div class="grid">
+                        <button class="background grey40" data-background="grey40" aria-selected="false"></button>
+                        <button class="background grey70" data-background="grey70" aria-selected="false"></button>
+                        <button class="background grey80" data-background="grey80" aria-selected="false"></button>
 
                     </div>
-                    <div class="grey">
-                        <button class="background grey40" aria-selected="false"></button>
-                        <button class="background grey70" aria-selected="false"></button>
-                        <button class="background grey80" aria-selected="false"></button>
+                    <div class="grid">
+                        <button class="background red50" data-background="red50" aria-selected="false"></button>
+                        <button class="background red60" data-background="red60" aria-selected="false"></button>
+                        <button class="background red70" data-background="red70" aria-selected="false"></button>
 
                     </div>
-                    <div class="red">
-                        <button class="background red50" aria-selected="false"></button>
-                        <button class="background red60" aria-selected="false"></button>
-                        <button class="background red70" aria-selected="false"></button>
-
-                    </div>
-                    <div class="yellow">
-                        <button class="background yellow50" aria-selected="true"></button>
-                        <button class="background yellow60" aria-selected="false"></button>
-                        <button class="background yellow70" aria-selected="false"></button>
+                    <div class="grid">
+                        <button class="background yellow50" data-background="yellow50" aria-selected="false"></button>
+                        <button class="background yellow60" data-background="yellow60" aria-selected="false"></button>
+                        <button class="background yellow70" data-background="yellow70" aria-selected="false"></button>
 
                     </div>
                 </div>
@@ -141,11 +146,11 @@
             </div>
         </div>
         <div class="buttons">
-            <button class="random button">Random</button>
+            <!-- <button class="random button">Random</button> -->
             <button class="download button">Download</button>
         </div>
     </div>
 
-    <script src="./scripts.js"></script>
+    <!-- <script src="./scripts.js"></script> -->
 </body>
 </html>

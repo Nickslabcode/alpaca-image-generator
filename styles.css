@@ -74,7 +74,8 @@ img[alt="accessories"] {
     border: 2px solid black;
     border-radius: 50px;
     padding: .75rem 1.75rem;
-    margin: .3rem;
+    margin-right: .6rem;
+    margin-bottom: .8rem;
     cursor: pointer;
 }
 
@@ -89,5 +90,86 @@ img[alt="accessories"] {
 }
 
 .tabs {
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
+}
+
+.background {
+    all: unset;
+    padding: 1rem 2.5rem;
+    margin: 5px;
+    background: black;
+    border-radius: 50px;
+
+}
+
+.blue50 {
+    background: url("assets/backgrounds/blue50.png");
+}
+
+.blue60 {
+    background: url("assets/backgrounds/blue60.png");
+}
+
+.blue70 {
+    background: url("assets/backgrounds/blue70.png");
+}
+
+.darkblue30 {
+    background: url("assets/backgrounds/darkblue30.png");
+}
+
+.darkblue50 {
+    background: url("assets/backgrounds/darkblue50.png");
+}
+
+.darkblue70 {
+    background: url("assets/backgrounds/darkblue70.png");
+}
+
+.green50 {
+    background: url("assets/backgrounds/green50.png");
+}
+
+.green60 {
+    background: url("assets/backgrounds/green60.png");
+}
+
+.green70 {
+    background: url("assets/backgrounds/green70.png");
+}
+
+.grey40 {
+    background: url("assets/backgrounds/grey40.png");
+}
+
+.grey70 {
+    background: url("assets/backgrounds/grey70.png");
+}
+
+.grey80 {
+    background: url("assets/backgrounds/grey80.png");
+}
+
+.red50 {
+    background: url("assets/backgrounds/red50.png");
+}
+
+.red60 {
+    background: url("assets/backgrounds/red60.png");
+}
+
+.red70 {
+    background: url("assets/backgrounds/red70.png");
+}
+
+.yellow50 {
+    background: url("assets/backgrounds/yellow50.png");
+}
+
+.yellow60 {
+    background: url("assets/backgrounds/yellow60.png");
+}
+
+.yellow70 {
+    background: url("assets/backgrounds/yellow70.png");
 }
